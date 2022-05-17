@@ -1,0 +1,46 @@
+.action {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #E5E5E5;
+    border-radius: 50%;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &_search {
+        background-image: url('../../../assets/images/icons/search.svg');
+    }
+
+    &_heart {
+        background-image: url('../../../assets/images/icons/heart.svg');
+    }
+
+    &_cart {
+        background-image: url('../../../assets/images/icons/cart.svg');
+    }
+
+    &__count {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        content: "";
+        top: 2px;
+        right: 0;
+        background-color: $color-red-light;
+        border-radius: 50%;
+        font-family: "Lato", sans-serif;
+        font-weight: 800;
+        font-size: 11px;
+        line-height: 13px;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_disabled {
+            display: none;
+        }
+    }
+}

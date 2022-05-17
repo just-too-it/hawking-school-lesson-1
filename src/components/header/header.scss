@@ -1,1 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 1785px;
+  height: 97px;
+  margin: 26px 72px 56px 63px;
 
+  &__logo {
+    margin-right: 52px;
+  }
+
+  &__nav {
+    margin-right: 56px;
+  }
+
+  &__phone {
+    color: $color-navy;
+    letter-spacing: 0.08em;
+    margin-right: 70px;
+
+    & span {
+      font-weight: 700;
+      color: $color-black;
+    }
+  }
+
+  &__callback {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $color-red;
+    border: none;
+    border-bottom: 1px dashed #AE2236;;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 61px;
+  }
+
+  &__social {
+    margin-right: 60px;
+  }
+
+  &__actions {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+}

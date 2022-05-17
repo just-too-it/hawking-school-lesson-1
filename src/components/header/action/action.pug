@@ -1,0 +1,6 @@
+mixin action(action)
+    - let countClassName = action.count ? "action__count" : "action__count action__count_disabled"
+
+    button.action(type="button")(class=`action_${action.name}`) 
+        div(class=`${countClassName}`) #{action.count}
+    

@@ -1,9 +1,15 @@
 @import 'base/fonts';
-@import 'base/globals';
 
 @import 'helpers/functions';
 @import 'helpers/mixins';
 @import 'helpers/variables';
 
+@import 'base/globals';
+
 @import 'libs/libs';
 @import '../components/components';
+@import '../components/header/logo/logo.scss';
+@import '../components/header/nav/nav.scss';
+@import '../components/header/action/action.scss';
+@import '../components/social/social.scss';
+@import '../components/social/socialItem/socialItem.scss';

@@ -1,0 +1,9 @@
+include ../../components/social/socialItem/socialItem
+
+mixin social(items, isPrimaryColor)
+    - let color = isPrimaryColor ? '#4C858B' : '#EA6628'
+
+    ul.social
+        each item in items  
+            li.social__item 
+                +socialItem(item, color)
