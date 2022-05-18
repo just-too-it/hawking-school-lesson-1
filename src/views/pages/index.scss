@@ -1,0 +1,15 @@
+.main {
+  max-width: $desktop-width;
+  margin: 0 auto;
+
+  &__wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+  }
+}

@@ -4,4 +4,9 @@ block variables
   title Монтаж дымоходов
 
 block content
-  h1 
+  .main__wrapper 
+    h1.main__title Монтаж дымоходов
+    .main__breadcrumbs
+      include ../../components/breadcrumbs/breadcrumbs
+      +breadcrumbs([{name: 'Главная', link: '/'}, {name: 'Монтаж дымоходов', link: '/mock-link'}])
+
