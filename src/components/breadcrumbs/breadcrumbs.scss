@@ -27,6 +27,7 @@
 
     &_current {
       color: $color-navy;
+      cursor: auto;
 
       &::after {
         display: none;

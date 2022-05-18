@@ -7,9 +7,19 @@
     margin: 0 auto;
   }
 
+  &__breadcrumbs {
+    margin-bottom: 81px;
+  }
+
   &__title {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 73px;
+    margin-bottom: 41px;
+  }
+
+  &__anons {
+    margin-bottom: 17px;
+  }
+
+  &__promo {
+
   }
 }

@@ -1,0 +1,86 @@
+.promo {
+    position: relative;
+    padding-top: 37px;
+
+    &__title {
+        display: inline-block;
+        width: 629px;
+        margin-bottom: 39px;
+
+        & span {
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 63px;
+            color: $color-red-light;
+        }
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__list {
+        width: 513px;
+    }
+
+    &__img {
+        position: absolute;
+        width: 766px;
+        height: 573px;
+        content: '';
+        top: 0;
+        right: -170px;
+        background-image: url('../../assets/images/chimney_blob.png');
+        background-repeat: no-repeat;
+
+        &::before {
+            position: absolute;
+            width: 47.05px;
+            height: 19.2px;
+            content: '';
+            top: 176px;
+            left: 18px;
+            background-image: url('../../assets/images/icons/triangle_2.svg');
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            position: absolute;
+            width: 77.51px;
+            height: 19.2px;
+            content: '';
+            top: 83px;
+            right: 0px;
+            background-image: url('../../assets/images/icons/triangle_3.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__wrapper-img {
+        width: inherit;
+        height: inherit;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            width: 36.03px;
+            height: 150px;
+            content: '';
+            top: 32.88px;
+            left: 145.05px;
+            background-image: url('../../assets/images/dots.png');
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            position: absolute;
+            width: 36.03px;
+            height: 150px;
+            content: '';
+            bottom: -32.54px;
+            right: 61.97px;
+            background-image: url('../../assets/images/dots.png');
+            background-repeat: no-repeat;
+        }
+    }
+}
