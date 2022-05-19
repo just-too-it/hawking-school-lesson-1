@@ -1,11 +1,11 @@
 .main {
-  max-width: $desktop-width;
+/*   max-width: $desktop-width;
   margin: 0 auto;
 
   &__wrapper {
     max-width: 1220px;
     margin: 0 auto;
-  }
+  } */
 
   &__breadcrumbs {
     margin-bottom: 81px;
@@ -20,6 +20,10 @@
   }
 
   &__promo {
+    margin-bottom: 65px;
+  }
 
+  &__process {
+    margin-bottom: 88px;
   }
 }
