@@ -16,6 +16,12 @@ block content
       include ../../components/process/process
       +process(['Расчёт предварительной заявки', 'Замер объекта нашим инженером', 'Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на  работы ', 'Изготовление Дымохода, покраска (если требуется)', 'Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация', 'Гарантийное обслуживание по соответствующем сроку'])
     .main__features
+      include ../../components/features/features
+      +features([
+        {imgName: 'guarantee', subtitle: 'Большой гарантийный срок', description: `<ul class='features__sublist'><li class='features__subitem'>Крепёж, стыковка элементов – <span>10 лет</span></li> <li class='features__subitem'>Сквозная коррозия труб – <span>5 лет</span></li> <li class='features__subitem'>Гидроизоляция – <span>3 года</span></li></ul>`},
+        {imgName: 'architect', subtitle: 'Помощь в покупке агрегата ', description: '(печи, камина, котла), а также качественной установке на объекте с последующим гарантийным сервисом'},
+        {imgName: 'review', subtitle: 'Реальные отзывы клиентов', description: 'Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе.'}
+      ])
     .main__consultation
     .main__video
     .main__photo

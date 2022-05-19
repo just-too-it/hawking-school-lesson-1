@@ -1,0 +1,33 @@
+.features {
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    &__img {
+        margin-bottom: 32px;
+    }
+
+    &__sublist {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & span {
+            font-weight: 600;
+            color: $color-red-light;
+        }
+    }
+}
