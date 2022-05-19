@@ -1,0 +1,13 @@
+section.consultation
+    .consultation__title необходима консультация?
+    .consultation__description оставьте заявку или свяжитесь с нами в социальных сетях
+    .consultation__social
+        include ../../components/social/social
+        +social([
+            {name: 'vk', link:'/mock-link', title: 'VK'},
+            {name: 'telegram', link:'/mock-link', title: 'Telegram'},
+            {name: 'instagram', link:'/mock-link', title: 'Instagram'},
+            {name: 'whatsapp', link:'/mock-link', title: 'Whatsapp'}
+        ], false)
+    .consultation__form
+        include ../../components/form/form
