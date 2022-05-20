@@ -1,12 +1,4 @@
-.main {
-/*   max-width: $desktop-width;
-  margin: 0 auto;
-
-  &__wrapper {
-    max-width: 1220px;
-    margin: 0 auto;
-  } */
-
+.page {
   &__breadcrumbs {
     margin-bottom: 81px;
   }
@@ -31,11 +23,10 @@
     margin-bottom: 98px;
   }
 
-  &__features {
-    margin-bottom: 99px;
+  &__consultation {
+    margin-bottom: 108px;
   }
 
-  
   &__video {
     margin-bottom: 99px;
   }

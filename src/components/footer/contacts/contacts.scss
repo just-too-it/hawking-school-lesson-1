@@ -1,0 +1,49 @@
+.contacts {
+    color: $color-white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    width: 308px;
+    margin-bottom: 25px;
+
+    & span {
+        color: $color-navy;
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        margin-bottom: 16px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        background-repeat: no-repeat;
+        background-position: center;
+       
+        &_time {
+            width: 15px;
+            height: 15px;
+            background-image: url('../../../assets/images/icons/wall-clock.svg');
+            margin-right: 8px;
+        }
+
+        &_address {
+            width: 17px;
+            height: 17px;
+            background-image: url('../../../assets/images/icons/placeholder.svg');
+            margin-right: 7px;
+        }
+    }
+
+    &__time {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
+    }
+}

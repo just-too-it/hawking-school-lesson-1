@@ -1,0 +1,13 @@
+mixin subNavigation(options)
+    - const LENGTH_OF_DISPAYED_LIST = 7;
+    - let additionalLink = "<a href='https://mock-link' class='sub-navigation__link'>Еще</a>";
+
+    article.sub-navigation
+        h4.sub-navigation__title #{options.title}
+        ul.sub-navigation__list   
+            each item, index in options.items
+                if index < LENGTH_OF_DISPAYED_LIST
+                    li.sub-navigation__item 
+                        a(href=`${item.link}` class="sub-navigation__link") #{item.name}
+            if options.items.length > LENGTH_OF_DISPAYED_LIST
+                li !{additionalLink}

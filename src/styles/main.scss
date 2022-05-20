@@ -6,6 +6,8 @@
 
 @import 'base/globals';
 
+@import '../views/pages/index.scss';
+
 @import 'libs/libs';
 @import '../components/components';
 @import '../components/header/logo/logo.scss';
@@ -21,6 +23,8 @@
 @import '../components/consultation/consultation.scss';
 @import '../components/video/video.scss';
 @import '../components/photos/photos.scss';
+@import '../components/footer/subNavigation/subNavigation.scss'; 
+@import '../components/footer/contacts/contacts.scss'; 
 
 @import '../components/UI/list/list.scss';
 @import '../components/UI/button/button.scss';
