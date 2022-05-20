@@ -5,10 +5,16 @@
   font-size: 14px;
   line-height: 24px;
   width: 308px;
-  margin-bottom: 25px;
+  font-style: normal;
 
   & span {
     color: $color-navy;
+  }
+
+  & p {
+    padding-left: 1px;
+    letter-spacing: 0.2;
+    margin: 0;
   }
 
   &__title {
@@ -19,6 +25,7 @@
   &__item {
     display: flex;
     align-items: center;
+    margin-bottom: 9px;
   }
 
   &__icon {
@@ -43,6 +50,6 @@
   &__time {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 7px;
+    gap: 2px;
   }
 }

@@ -1,19 +1,24 @@
 .video {
   &__title {
     margin-bottom: 66px;
+    margin-left: -2px;
   }
 
   &__text {
-    margin-bottom: 65px;
+    margin-bottom: 52px;
+    margin-left: 1px;
   }
 
   &__wrapper {
+    width: 1155px;
+    margin: 0 auto;
     background-image: url('../../assets/images/video_background.png');
     background-repeat: no-repeat;
     text-align: center;
 
     & iframe {
       margin-top: 49px;
+      margin-left: -20px;
     }
   }
 

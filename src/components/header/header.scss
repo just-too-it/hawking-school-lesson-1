@@ -1,5 +1,5 @@
 .header {
-  margin: 26px auto 56px;
+  margin: 26px auto 57px;
   height: 97px;
   padding-left: 63px;
   padding-right: 72px;
@@ -15,13 +15,13 @@
   }
 
   &__nav {
-    margin-right: 56px;
+    margin-right: 57px;
   }
 
   &__phone {
     color: $color-navy;
     letter-spacing: 0.08em;
-    margin-right: 70px;
+    margin-right: 71px;
     min-width: 162px;
 
     & span {
@@ -42,10 +42,14 @@
     background: transparent;
     padding: 0;
     cursor: pointer;
-    margin-right: 61px;
+    margin-right: 65px;
+    font-family: Montserrat, sans-serif;
+    height: 30px;
+    flex-shrink: 0;
   }
 
   &__social {
+    margin-top: 6px;
     margin-right: 60px;
   }
 

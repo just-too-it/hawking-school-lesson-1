@@ -1,40 +1,42 @@
+include ../../components/footer/subNavigation/subNavigation
+include ../../components/social/social 
+
 footer.footer
     .container.footer__container
-        include ../../components/footer/subNavigation/subNavigation
-        +subNavigation({
-            title: 'Каталог',
+        .footer__nav
+            +subNavigation({
+                title: 'Каталог',
+                items: [
+                    {name: 'Дымоходы', link: 'http://mock-link'},
+                    {name: 'Дымососы', link: 'http://mock-link'},
+                    {name: 'Печи для дома', link: 'http://mock-link'},
+                    {name: 'Печи для бани', link: 'http://mock-link'},
+                    {name: 'Камины', link: 'http://mock-link'},
+                    {name: 'Силикат кальция', link: 'http://mock-link'},
+                    {name: 'Котлы', link: 'http://mock-link'},
+                    {name: 'Дымоходы', link: 'http://mock-link'},
+                    {name: 'Дымососы', link: 'http://mock-link'},
+                    {name: 'Печи для дома', link: 'http://mock-link'},
+                    {name: 'Печи для бани', link: 'http://mock-link'},
+                    {name: 'Камины', link: 'http://mock-link'},
+                    {name: 'Силикат кальция', link: 'http://mock-link'},
+                    {name: 'Котлы', link: 'http://mock-link'},
+                ]
+            })
+            +subNavigation({
+            title: 'Информация',
             items: [
-                {name: 'Дымоходы', link: 'http://mock-link'},
-                {name: 'Дымососы', link: 'http://mock-link'},
-                {name: 'Печи для дома', link: 'http://mock-link'},
-                {name: 'Печи для бани', link: 'http://mock-link'},
-                {name: 'Камины', link: 'http://mock-link'},
-                {name: 'Силикат кальция', link: 'http://mock-link'},
-                {name: 'Котлы', link: 'http://mock-link'},
-                {name: 'Дымоходы', link: 'http://mock-link'},
-                {name: 'Дымососы', link: 'http://mock-link'},
-                {name: 'Печи для дома', link: 'http://mock-link'},
-                {name: 'Печи для бани', link: 'http://mock-link'},
-                {name: 'Камины', link: 'http://mock-link'},
-                {name: 'Силикат кальция', link: 'http://mock-link'},
-                {name: 'Котлы', link: 'http://mock-link'},
+                {name: 'Каталог', link: 'http://mock-link'},
+                {name: 'Установка и монтаж', link: 'http://mock-link'},
+                {name: 'Отзывы', link: 'http://mock-link'},
+                {name: 'Ликвидация товара', link: 'http://mock-link'},
+                {name: 'Полезное', link: 'http://mock-link'},
+                {name: 'Контакты', link: 'http://mock-link'},
+                {name: 'Оплата и доставка', link: 'http://mock-link'},
             ]
-        })
-        +subNavigation({
-        title: 'Информация',
-        items: [
-            {name: 'Каталог', link: 'http://mock-link'},
-            {name: 'Установка и монтаж', link: 'http://mock-link'},
-            {name: 'Отзывы', link: 'http://mock-link'},
-            {name: 'Ликвидация товара', link: 'http://mock-link'},
-            {name: 'Полезное', link: 'http://mock-link'},
-            {name: 'Контакты', link: 'http://mock-link'},
-            {name: 'Оплата и доставка', link: 'http://mock-link'},
-        ]
-        })
+            })
         .footer__contacts
             include ../../components/footer/contacts/contacts 
-            include ../../components/social/social 
             +social([
                         {name: 'vk', link:'/mock-link', title: 'VK'},
                         {name: 'telegram', link:'/mock-link', title: 'Telegram'},

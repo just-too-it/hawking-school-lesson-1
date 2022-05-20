@@ -1,10 +1,11 @@
+include ../../components/UI/input/input
+include ../../components/UI/button/button
+
 form.form(name='consultation')
     fieldset.form__fieldset
         .form__title Для <span>консультации</span> заполните форму!
         .form__description С Вами свяжутся в ближайшее время
         .form__content  
-            include ../../components/UI/input/input
             +input({type:'text', placeholder: 'Ваше имя'})
             +input({type:'tel', placeholder: 'Ваш телефон'})
-            include ../../components/UI/button/button
             +button({type:'submit', text: 'отправить'})

@@ -1,10 +1,12 @@
 .photos {
   &__title {
     margin-bottom: 66px;
+    margin-left: -2px;
   }
 
   &__text {
     margin-bottom: 48px;
+    margin-left: 1px;
   }
 
   &__list {
@@ -52,7 +54,7 @@
       content: '';
       width: 50px;
       height: 4px;
-      top: 23px;
+      top: 23.5px;
       right: -24px;
       transform: rotate(90deg);
       background-color: $color-navy;

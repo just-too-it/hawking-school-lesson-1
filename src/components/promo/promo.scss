@@ -4,9 +4,9 @@
 
   &__title {
     display: inline-block;
-    line-height: 63px;
+    line-height: 60px;
     width: 629px;
-    margin-bottom: 39px;
+    margin-bottom: 41px;
 
     &::before {
       display: none;
@@ -27,6 +27,7 @@
 
   &__list {
     width: 513px;
+    margin-left: 55px;
   }
 
   &__img {
@@ -34,8 +35,8 @@
     width: 766px;
     height: 573px;
     content: '';
-    top: 0;
-    right: -170px;
+    top: 6px;
+    right: -160px;
     background-image: url('../../assets/images/chimney_blob.png');
     background-repeat: no-repeat;
 

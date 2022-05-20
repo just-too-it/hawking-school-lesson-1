@@ -9,4 +9,22 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__nav {
+    display: flex;
+    width: 772px;
+    justify-content: space-between;
+  }
+
+  &__contacts {
+    margin-top: -2px;
+
+    & .contacts {
+      margin-bottom: 28px;
+    }
+
+    & .social {
+      padding-left: 3px;
+    }
+  }
 }

@@ -4,7 +4,7 @@
   color: $color-white;
 
   &__title {
-    margin-bottom: 18px;
+    margin-bottom: 11px;
   }
 
   &__list {
@@ -12,9 +12,10 @@
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 31px);
+    grid-template-columns: 55% 45%;
+    grid-template-rows: repeat(4, 36px);
     grid-auto-flow: column;
+    column-gap: 25px;
   }
 
   &__link {

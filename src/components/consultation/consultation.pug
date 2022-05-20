@@ -1,8 +1,9 @@
+include ../../components/social/social
+
 section.consultation
     .consultation__title необходима консультация?
     .consultation__description оставьте заявку или свяжитесь с нами в социальных сетях
     .consultation__social
-        include ../../components/social/social
         +social([
             {name: 'vk', link:'/mock-link', title: 'VK'},
             {name: 'telegram', link:'/mock-link', title: 'Telegram'},
