@@ -2,14 +2,91 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 115px;
+  width: 203px;
   display: flex;
   justify-content: space-between;
+
+  &_small {
+    width: 115px;
+
+    & .social__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+
+      .social__link {
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &_vk {
+          width: 20px;
+          height: 12px;
+          mask-size: 20px 12px;
+        }
+      
+        &_telegram {
+          width: 19px;
+          height: 17px;
+          mask-size: 19px 17px;
+        }
+      
+        &_instagram {
+          width: 15px;
+          height: 16px;
+          mask-size: 15px 16px;
+        }
+      
+        &_whatsapp {
+          width: 15px;
+          height: 16px;
+          mask-size: 15px 16px;
+        }
+      }
+    }
+  }
 
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
+    width: 23px;
+    height: 23px;
+
+    .social__link {
+      display: inline-block;
+      background-position: center;
+      background-repeat: no-repeat;
+    
+      &_vk {
+        mask-image: url('../../../assets/images/icons/vk.svg');
+        width: 23px;
+        height: 14px;
+        mask-size: 23px 14px;
+      }
+    
+      &_telegram {
+        mask-image: url('../../../assets/images/icons/telegram.svg');
+        width: 22px;
+        height: 20px;
+        mask-size: 22px 20px;
+      }
+    
+      &_instagram {
+        mask-image: url('../../../assets/images/icons/instagram.svg');
+        width: 18px;
+        height: 19px;
+        mask-size: 18px 19px;
+      }
+    
+      &_whatsapp {
+        mask-image: url('../../../assets/images/icons/whatsapp.svg');
+        width: 18px;
+        height: 19px;
+        mask-size: 18px 19px;
+      }
+    }
   }
 }
