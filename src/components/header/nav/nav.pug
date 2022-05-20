@@ -1,0 +1,7 @@
+mixin nav(options)
+    nav.nav
+        button.nav__button
+        ul.nav__list 
+            each option in options
+                li.nav__item 
+                    a(href=`${option.link}`).nav__link #{option.name}

@@ -1,0 +1,42 @@
+.features {
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    margin-bottom: 51px;
+    padding-left: 5px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 27px;
+  }
+
+  &__item {
+    padding-left: 2px;
+  }
+
+  &__img {
+    margin-bottom: 33px;
+  }
+
+  &__subtitle {
+    margin-bottom: -7px;
+  }
+
+  &__sublist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & span {
+      font-weight: 600;
+      color: $color-red-light;
+    }
+  }
+}

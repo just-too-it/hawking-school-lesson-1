@@ -1,0 +1,35 @@
+.nav {
+  width: 752px;
+  display: flex;
+  align-items: center;
+
+  &__button {
+    width: 56px;
+    height: 56px;
+    background-color: transparent;
+    background-image: url('../../../assets/images/icons/burger_menu.png');
+    background-repeat: no-repeat;
+    border: none;
+    margin-right: 31px;
+    cursor: pointer;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 37px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: $color-navy;
+  }
+}

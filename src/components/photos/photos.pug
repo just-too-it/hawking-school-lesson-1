@@ -1,0 +1,9 @@
+mixin photos(options)
+    section.photos
+        h2.photos__title #{options.title}
+        p.photos__text #{options.text}
+        ul.photos__list 
+            each photo in options.photos
+                li.photos__item
+                    .photos__wrapper
+                        img(src=`${photo.src}` alt=`${photo.alt}` class='photos__img')

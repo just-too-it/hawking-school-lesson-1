@@ -1,0 +1,28 @@
+include ../../components/header/nav/nav
+include ../../components/social/social
+include ../../components/header/action/action
+
+header.header
+    div(class="container header__container")
+        .header__logo 
+            include ../../components/header/logo/logo
+        .header__nav
+            +nav([
+                {link:'/mock-link', name:'Каталог товаров'},
+                {link:'/mock-link', name:'Доставка и оплата'},
+                {link:'/mock-link', name:'Цены'},
+                {link:'/mock-link', name:'Контакты'},
+                ])
+        .header__phone +7 (812) <span>509 21 98</span>
+        button.header__callback(type='button') перезвоните мне
+        .header__social 
+            +social([
+                {name: 'vk', link:'/mock-link', title: 'VK'},
+                {name: 'telegram', link:'/mock-link', title: 'Telegram'},
+                {name: 'instagram', link:'/mock-link', title: 'Instagram'},
+                {name: 'whatsapp', link:'/mock-link', title: 'Whatsapp'}
+            ], true, 'small')
+        .header__actions
+            +action({name: 'search'})
+            +action({name: 'heart'})
+            +action({name: 'cart', count: 10})

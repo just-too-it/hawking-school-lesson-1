@@ -1,0 +1,22 @@
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    line-height: 24px;
+    margin-bottom: 24px;
+
+    &::before {
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      content: '';
+      top: 7px;
+      left: -25px;
+      background-color: $color-orange;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+mixin social(items, isPrimaryColor, size)
+    - let color = isPrimaryColor ? '#4C858B' : '#EA6628';
+    - let listClassName = size==='small' ? 'social social_small': 'social';
+
+    ul(class=`${listClassName}`)
+        each item in items  
+            li.social__item 
+                a(href=`${item.link}` class=`social__link social__link_${item.name}` style=`background-color: ${color}` title=`${item.title}`)
