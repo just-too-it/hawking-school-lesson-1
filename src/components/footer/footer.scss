@@ -1,13 +1,13 @@
 .footer {
-    width: $desktop-width;
-    margin: 0 auto;
-    background: $color-navy-bright;
-    height: 350px;
-    padding-top: 88px;
-    padding-bottom: 92px;
+  width: $desktop-width;
+  margin: 0 auto;
+  background: $color-navy-bright;
+  height: 350px;
+  padding-top: 88px;
+  padding-bottom: 92px;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }

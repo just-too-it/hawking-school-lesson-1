@@ -1,15 +1,14 @@
 .header {
-  margin: 26px auto 56px auto;
+  margin: 26px auto 56px;
   height: 97px;
   padding-left: 63px;
   padding-right: 72px;
-  
+
   &__container {
     max-width: 1785px;
     display: flex;
     align-items: center;
   }
-
 
   &__logo {
     margin-right: 52px;
@@ -23,7 +22,7 @@
     color: $color-navy;
     letter-spacing: 0.08em;
     margin-right: 70px;
-    min-width: 162px; 
+    min-width: 162px;
 
     & span {
       font-weight: 700;
@@ -32,14 +31,14 @@
   }
 
   &__callback {
-    min-width: 144px; 
+    min-width: 144px;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     color: $color-red;
     border: none;
-    border-bottom: 1px dashed #AE2236;;
+    border-bottom: 1px dashed #ae2236;
     background: transparent;
     padding: 0;
     cursor: pointer;

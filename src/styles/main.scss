@@ -1,33 +1,29 @@
 @import 'base/fonts';
 
-@import 'helpers/functions';
-@import 'helpers/mixins';
 @import 'helpers/variables';
 
 @import 'base/globals';
 
-@import '../views/pages/index.scss';
-
 @import 'libs/libs';
 @import '../components/components';
-@import '../components/header/logo/logo.scss';
-@import '../components/header/nav/nav.scss';
-@import '../components/header/action/action.scss';
-@import '../components/social/social.scss';
-@import '../components/social/socialItem/socialItem.scss';
-@import '../components/breadcrumbs/breadcrumbs.scss';
-@import '../components/promo/promo.scss';
-@import '../components/process/process.scss';
-@import '../components/features/features.scss';
-@import '../components/form/form.scss';
-@import '../components/consultation/consultation.scss';
-@import '../components/video/video.scss';
-@import '../components/photos/photos.scss';
-@import '../components/footer/subNavigation/subNavigation.scss'; 
-@import '../components/footer/contacts/contacts.scss'; 
+@import '../components/header/logo/logo';
+@import '../components/header/nav/nav';
+@import '../components/header/action/action';
+@import '../components/social/social';
+@import '../components/social/socialItem/socialItem';
+@import '../components/breadcrumbs/breadcrumbs';
+@import '../components/promo/promo';
+@import '../components/process/process';
+@import '../components/features/features';
+@import '../components/form/form';
+@import '../components/consultation/consultation';
+@import '../components/video/video';
+@import '../components/photos/photos';
+@import '../components/footer/subNavigation/subNavigation';
+@import '../components/footer/contacts/contacts';
 
-@import '../components/UI/list/list.scss';
-@import '../components/UI/button/button.scss';
-@import '../components/UI/input/input.scss';
+@import '../components/UI/list/list';
+@import '../components/UI/button/button';
+@import '../components/UI/input/input';
 
-@import '../views/pages/index.scss';
+@import '../views/pages/index';

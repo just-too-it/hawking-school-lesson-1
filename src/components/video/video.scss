@@ -1,23 +1,23 @@
 .video {
+  &__title {
+    margin-bottom: 66px;
+  }
 
-    &__title {
-        margin-bottom: 66px;
+  &__text {
+    margin-bottom: 65px;
+  }
+
+  &__wrapper {
+    background-image: url('../../assets/images/video_background.png');
+    background-repeat: no-repeat;
+    text-align: center;
+
+    & iframe {
+      margin-top: 49px;
     }
+  }
 
-    &__text {
-        margin-bottom: 65px;
-    }
-
-    &__wrapper {
-        background-image: url('../../assets/images/video_background.png');
-        background-repeat: no-repeat;
-        text-align: center;
-
-        & iframe {
-            padding-top: 49px;
-        }
-    }
-    /* адаптив
+  /* адаптив
         &__wrapper {
         position: relative;
         padding-bottom: 56.25%;
