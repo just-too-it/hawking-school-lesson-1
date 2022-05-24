@@ -1,6 +1,7 @@
-mixin process(items)
-    section.process 
-        h2.process__title Процесс выполнения монтажа
-        ol.process__list 
-            each item in items  
-                li.process__item #{item}
+include ./process.data.pug
+
+section.process 
+    h2.process__title #{process.title} 
+    ol.process__list 
+        each item in process.items
+            li.process__item #{item}

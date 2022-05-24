@@ -1,14 +1,10 @@
 include ../../components/social/social
+include ./consultation.data.pug
 
 section.consultation
-    .consultation__title необходима консультация?
-    .consultation__description оставьте заявку или свяжитесь с нами в социальных сетях
+    .consultation__title= consultation.title 
+    .consultation__description= consultation.description  
     .consultation__social
-        +social([
-            {name: 'vk', link:'/mock-link', title: 'VK'},
-            {name: 'telegram', link:'/mock-link', title: 'Telegram'},
-            {name: 'instagram', link:'/mock-link', title: 'Instagram'},
-            {name: 'whatsapp', link:'/mock-link', title: 'Whatsapp'}
-        ], false)
+        +social(false)
     .consultation__form
         include ../../components/form/form

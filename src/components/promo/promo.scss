@@ -30,64 +30,79 @@
     margin-left: 55px;
   }
 
+  &__img-wrapper {
+    position: absolute;
+    content: '';
+    top: 35px;
+    right: -161px;
+    width: 766px;
+    height: 573px;
+    background-image: url('../../assets/images/blob_background.png');
+    background-repeat: no-repeat;
+  }
+
   &__img {
+    
+    position: absolute;
+    content: '';
+    top: -28px;
+    left: 179px;
+
+      width: 477px;
+      height: 459px;
+
+    
+  }
+  
+}
+
+
+/* &__img {
+  position: absolute;
+  width: 766px;
+  height: 573px;
+  content: '';
+  top: 6px;
+  right: -160px;
+  background-image: url('../../assets/images/chimney.png');
+  background-repeat: no-repeat;
+
+  &::before {
     position: absolute;
     width: 766px;
     height: 573px;
     content: '';
-    top: 6px;
-    right: -160px;
-    background-image: url('../../assets/images/chimney_blob.png');
+    top: 176px;
+    left: 18px;
+    background-image: url('../../assets/images/blob_background.png');
     background-repeat: no-repeat;
-
-    &::before {
-      position: absolute;
-      width: 47.05px;
-      height: 19.2px;
-      content: '';
-      top: 176px;
-      left: 18px;
-      background-image: url('../../assets/images/icons/triangle_2.svg');
-      background-repeat: no-repeat;
-    }
-
-    &::after {
-      position: absolute;
-      width: 77.51px;
-      height: 19.2px;
-      content: '';
-      top: 83px;
-      right: 0;
-      background-image: url('../../assets/images/icons/triangle_3.svg');
-      background-repeat: no-repeat;
-    }
-  }
-
-  &__wrapper-img {
-    width: inherit;
-    height: inherit;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      width: 36.03px;
-      height: 150px;
-      content: '';
-      top: 32.88px;
-      left: 145.05px;
-      background-image: url('../../assets/images/dots.png');
-      background-repeat: no-repeat;
-    }
-
-    &::after {
-      position: absolute;
-      width: 36.03px;
-      height: 150px;
-      content: '';
-      bottom: -32.54px;
-      right: 61.97px;
-      background-image: url('../../assets/images/dots.png');
-      background-repeat: no-repeat;
-    }
   }
 }
+
+&__wrapper-img {
+  width: inherit;
+  height: inherit;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    width: 36.03px;
+    height: 150px;
+    content: '';
+    top: 32.88px;
+    left: 145.05px;
+    background-image: url('../../assets/images/dots.png');
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    width: 36.03px;
+    height: 150px;
+    content: '';
+    bottom: -32.54px;
+    right: 61.97px;
+    background-image: url('../../assets/images/dots.png');
+    background-repeat: no-repeat;
+  }
+} */

@@ -18,11 +18,11 @@
     margin-right: 57px;
   }
 
-  &__phone {
+  &__phone a {
     color: $color-navy;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.07em;
     margin-right: 71px;
-    min-width: 162px;
+    min-width: 163px;
 
     & span {
       font-weight: 700;

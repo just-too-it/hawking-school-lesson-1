@@ -1,7 +1,8 @@
-mixin nav(options)
-    nav.nav
-        button.nav__button
-        ul.nav__list 
-            each option in options
-                li.nav__item 
-                    a(href=`${option.link}`).nav__link #{option.name}
+include ./nav.data.pug
+
+nav.nav
+    button.nav__button
+    ul.nav__list 
+        each item in navItems
+            li.nav__item 
+                a(href=`${item.link}` title=`${item.name}`).nav__link #{item.name}

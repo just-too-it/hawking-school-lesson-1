@@ -1,51 +1,24 @@
 extends ../layouts/default
-include ../../components/breadcrumbs/breadcrumbs
-include ../../components/process/process
-include ../../components/features/features
-include ../../components/video/video
-include ../../components/photos/photos
 
 block variables
-  title Монтаж дымоходов
+  - var pageTitle = "Монтаж дымоходов"
+  - var pageDescription = 'Процесс монтажа дымоходов.'
 
 block content
   .container
     h1.page__title Монтаж дымоходов
     .page__breadcrumbs
-      +breadcrumbs([{name: 'Главная', link: '/'}, {name: 'Монтаж дымоходов'}])
-    p.page__anons В <a href="/" title="Дымоход.ру">Дымоход.ру</a>&nbsp;&nbsp;вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим качественно и аккуратно, в короткий срок и на совесть.
+      include ../../components/breadcrumbs/breadcrumbs
+    p.page__anons В <a href="/" title="Дымоход.ру">Дымоход.ру</a> вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим качественно и аккуратно, в короткий срок и на совесть.
     .page__promo
       include ../../components/promo/promo
     .page__process
-      +process(['Расчёт предварительной заявки', 'Замер объекта нашим инженером', 'Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на  работы ', 'Изготовление Дымохода, покраска (если требуется)', 'Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация', 'Гарантийное обслуживание по соответствующем сроку'])
+      include ../../components/process/process
     .page__features
-      +features([
-        {imgName: 'guarantee', subtitle: 'Большой гарантийный срок', description: `<ul class='features__sublist'><li class='features__subitem'>Крепёж, стыковка элементов – <span>10 лет</span></li> <li class='features__subitem'>Сквозная коррозия труб – <span>5 лет</span></li> <li class='features__subitem'>Гидроизоляция – <span>3 года</span></li></ul>`},
-        {imgName: 'architect', subtitle: 'Помощь в покупке агрегата ', description: '(печи, камина, котла), а также качественной установке на объекте с последующим гарантийным сервисом'},
-        {imgName: 'review', subtitle: 'Реальные отзывы клиентов', description: 'Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе.'}
-      ])
+      include ../../components/features/features
     .page__consultation
       include ../../components/consultation/consultation
     .page__video
-      +video({
-        title: 'Видео об установке',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        src: 'https://www.youtube.com/embed/5WxkuYXjNzM'
-      })
+      include ../../components/video/video
     .page__photos
-      +photos({
-        title: 'Фото выполненных работ',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        photos: [
-          {src: '../../assets/images/gallery/photo_1.png', alt: 'Фото 1'},
-          {src: '../../assets/images/gallery/photo_2.png', alt: 'Фото 2'},
-          {src: '../../assets/images/gallery/photo_3.png', alt: 'Фото 3'},
-          {src: '../../assets/images/gallery/photo_4.png', alt: 'Фото 4'},
-          {src: '../../assets/images/gallery/photo_5.png', alt: 'Фото 5'},
-          {src: '../../assets/images/gallery/photo_6.png', alt: 'Фото 6'},
-          {src: '../../assets/images/gallery/photo_7.png', alt: 'Фото 7'},
-          {src: '../../assets/images/gallery/photo_8.png', alt: 'Фото 8'},
-        ]
-      })
-
-
+      include ../../components/photos/photos

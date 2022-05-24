@@ -28,47 +28,24 @@
       position: absolute;
       content: '';
       width: 50px;
-      height: 4px;
+      height: 50px;
       top: 0;
       right: 0;
-      background-color: $color-navy;
-      z-index: 1;
+      background-color: transparent;
+      border-top: 4px solid $color-navy;
+      border-right: 4px solid $color-navy;
     }
 
     &::after {
       position: absolute;
       content: '';
       width: 50px;
-      height: 4px;
+      height: 50px;
       bottom: 0;
       left: 0;
-      background-color: $color-navy;
-    }
-  }
-
-  &__wrapper {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: '';
-      width: 50px;
-      height: 4px;
-      top: 23.5px;
-      right: -24px;
-      transform: rotate(90deg);
-      background-color: $color-navy;
-    }
-
-    &::after {
-      position: absolute;
-      content: '';
-      width: 50px;
-      height: 4px;
-      bottom: 24px;
-      left: -23px;
-      transform: rotate(90deg);
-      background-color: $color-navy;
+      background-color: transparent;
+      border-bottom: 4px solid $color-navy;
+      border-left: 4px solid $color-navy;
     }
   }
 

@@ -1,6 +1,5 @@
 mixin action(action)
-    - let countClassName = action.count ? "action__count" : "action__count action__count_disabled"
 
     button(type="button" class=`action action_${action.name}`) 
-        div(class=`${countClassName}`) #{action.count}
-    
+        if (action.count)
+            span.action__count #{action.count}
