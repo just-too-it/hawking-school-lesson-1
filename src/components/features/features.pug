@@ -1,10 +1,11 @@
-mixin features(options)
-    section.features    
-        h2.features__title Почему Дымоход.ру?
-        p.features__text В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык» 
-        ul.features__list    
-            each item in options 
-                li.features__item 
-                    img.features__img(src=(`../../assets/images/${item.imgName}.png`))
-                    h3.features__subtitle #{item.subtitle}
-                    p.features__description !{item.description}
+include ./features.data.pug
+
+section.features    
+    h2.features__title= features.title
+    p.features__text= features.description
+    ul.features__list    
+      each item in features.items
+        li.features__item 
+          img.features__img(src=(`../../assets/images/${item.imgName}.png`) alt=`${item.alt}`)
+          h3.features__subtitle #{item.subtitle}
+          .features__description !{item.description}

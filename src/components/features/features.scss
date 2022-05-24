@@ -22,7 +22,7 @@
   }
 
   &__img {
-    margin-bottom: 33px;
+    margin-bottom: 23px;
   }
 
   &__subtitle {
@@ -38,5 +38,9 @@
       font-weight: 600;
       color: $color-red-light;
     }
+  }
+
+  &__description {
+    padding-top: 17px;
   }
 }

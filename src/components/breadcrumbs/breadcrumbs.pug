@@ -1,8 +1,8 @@
-mixin breadcrumbs(options)
+include ./breadcrumbs.data.pug
 
-    .breadcrumbs 
-        each option, index in options
-            if options[index].link
-                a(href=`${options[index].link}` class=`${index===options.length-1 ? 'breadcrumbs__link breadcrumbs__link_current': 'breadcrumbs__link'}`) #{options[index].name} 
-            else 
-                span(class=`breadcrumbs__link breadcrumbs__link_current`) #{options[index].name}
+.breadcrumbs 
+    each option, index in breadcrumbs
+        if breadcrumbs[index].link
+            a(href=`${breadcrumbs[index].link}` class=`${index===breadcrumbs.length-1 ? 'breadcrumbs__link breadcrumbs__link_current': 'breadcrumbs__link'}`) #{breadcrumbs[index].name} 
+        else 
+            span(class=`breadcrumbs__link breadcrumbs__link_current`) #{breadcrumbs[index].name}

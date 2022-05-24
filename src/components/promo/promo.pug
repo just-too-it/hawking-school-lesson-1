@@ -1,17 +1,10 @@
 include ../../components/UI/list/list
+include ./promo.data.pug
 
 section.promo 
-    h2.promo__title Lorem ipsum dolor sit amet <span>Lorem ipsum</span>
+    h2.promo__title !{promo.title}
     .promo__content
         .promo__list
-            +list([
-                'Доступные цены',
-                `Собственное производство Дымоходов`,
-                'Выполнение необходимых работ, связанных с установкой камина, печи, котла',
-                'Гарантия (от трёх до десяти лет)',
-                'Работаем чисто, аккуратно, убираем за собой, не сквернословим',
-                'Только русские квалифицированные специалисты',
-                'Устанавливаем любые дымоходы всех производителей',
-            ])
-        .promo__img
-            .promo__wrapper-img
+            +list(promo.items)
+        .promo__img-wrapper
+            img(src='../../assets/images/chimney.png' width='477' height='459' alt="Дымоход" class="promo__img")
