@@ -2,11 +2,29 @@
   &__title {
     margin-bottom: 66px;
     margin-left: -2px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 34px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 16px;
+    }
   }
 
   &__text {
     margin-bottom: 48px;
     margin-left: 1px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 36px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__list {
@@ -16,6 +34,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+
+    @media (max-width: $max-tablet-width) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 16px;
+      column-gap: 30px;
+    }
   }
 
   &__item {
@@ -23,6 +52,17 @@
     height: 260px;
     box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
     position: relative;
+    margin: 0 auto;
+
+    @media (max-width: $max-tablet-width) {
+      width: 226px;
+      height: 208px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 130px;
+      height: 120px;
+    }
 
     &::before {
       position: absolute;
@@ -34,6 +74,11 @@
       background-color: transparent;
       border-top: 4px solid $color-navy;
       border-right: 4px solid $color-navy;
+
+      @media (max-width: $max-mobile-width) {
+        width: 30px;
+        height: 30px;
+      }
     }
 
     &::after {
@@ -46,6 +91,11 @@
       background-color: transparent;
       border-bottom: 4px solid $color-navy;
       border-left: 4px solid $color-navy;
+
+      @media (max-width: $max-mobile-width) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
@@ -54,5 +104,15 @@
     height: 260px;
     background-color: $color-white;
     object-fit: cover;
+
+    @media (max-width: $max-tablet-width) {
+      width: 226px;
+      height: 208px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 130px;
+      height: 120px;
+    }
   }
 }

@@ -10,4 +10,8 @@
   letter-spacing: 0.8;
   color: $color-white;
   cursor: pointer;
+
+  @media (max-width: $max-tablet-width) {
+    letter-spacing: 0.7px;
+  }
 }

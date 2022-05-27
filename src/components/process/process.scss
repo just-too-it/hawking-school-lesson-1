@@ -1,6 +1,15 @@
 .process {
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 18px;
+      margin-left: 2px;
+    }
   }
 
   &__list {
@@ -8,36 +17,71 @@
     counter-reset: num;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-flow: column wrap;
-    height: 290px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    column-gap: 27px;
+    row-gap: 37px;
 
     /* column-count: 2; */
+
+    @media (max-width: $max-tablet-width) {
+      font-size: 14px;
+      line-height: 26px;
+      row-gap: 18px;
+      column-gap: 33px;
+      align-items: start;
+      grid-template-rows: repeat(3, auto);
+    }
+
+    @media (max-width: $max-mobile-width) {
+      display: list-item;
+    }
   }
 
   &__item {
     position: relative;
-    height: 96px;
-    width: 625px;
+    min-height: 50px;
     padding-left: 80px;
-    padding-bottom: 10px;
     display: flex;
     align-items: center;
+
+    @media (max-width: $max-tablet-width) {
+      padding-left: 46px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      min-height: 50px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 13px;
+      padding-left: 49px;
+    }
 
     &::before {
       content: counter(num);
       counter-increment: num;
       display: inline-block;
       position: absolute;
-      top: 0;
       left: 0;
-      width: 28px;
+      width: 50px;
       height: 85px;
       font-weight: 700;
       font-size: 70px;
       line-height: 85px;
       color: $color-red-light;
       opacity: 0.2;
+
+      @media (max-width: $max-tablet-width) {
+        display: flex;
+        justify-content: center;
+        height: 61px;
+        width: 35px;
+        top: -5px;
+        font-size: 50px;
+        line-height: 61px;
+      }
     }
   }
 }

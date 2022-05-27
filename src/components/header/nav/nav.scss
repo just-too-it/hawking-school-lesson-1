@@ -3,6 +3,14 @@
   display: flex;
   align-items: center;
 
+  @media (max-width: $max-tablet-width) {
+    width: 56px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 44px;
+  }
+
   &__button {
     width: 56px;
     height: 56px;
@@ -12,6 +20,17 @@
     border: none;
     margin-right: 31px;
     cursor: pointer;
+
+    @media (max-width: $max-tablet-width) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 44px;
+      height: 44px;
+      margin: 0;
+      background-size: 44px 44px;
+    }
   }
 
   &__list {
@@ -19,6 +38,10 @@
     margin: 0;
     padding: 0;
     display: flex;
+
+    @media (max-width: $max-tablet-width) {
+      display: none;
+    }
   }
 
   &__item {

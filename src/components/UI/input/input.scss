@@ -8,4 +8,15 @@
   font-size: 14px;
   line-height: 22px;
   color: $color-grey;
+
+  @media (max-width: $max-tablet-width) {
+    width: 354px;
+    height: 56px;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    width: 290px;
+    height: 56px;
+  }
 }

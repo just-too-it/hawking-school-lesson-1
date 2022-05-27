@@ -1,19 +1,30 @@
 .footer {
   margin: 0 auto;
   background: $color-navy-bright;
-  height: 350px;
-  padding-top: 87px;
-  padding-bottom: 92px;
 
   &__container {
     display: flex;
     justify-content: space-between;
+    height: 350px;
+    padding-top: 87px;
+    padding-bottom: 92px;
+
+    @media (max-width: $max-tablet-width) {
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      padding: 0;
+    }
   }
 
   &__nav {
     display: flex;
     width: 772px;
     justify-content: space-between;
+
+    @media (max-width: $max-tablet-width) {
+      display: none;
+    }
   }
 
   &__contacts {
@@ -21,10 +32,16 @@
 
     & .contacts {
       margin-bottom: 26px;
+      @media (max-width: $max-tablet-width) {
+        display: none;
+      }
     }
 
     & .social {
       padding-left: 2px;
+      @media (max-width: $max-tablet-width) {
+        padding-left: 0;
+      }
     }
   }
 }

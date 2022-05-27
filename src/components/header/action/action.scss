@@ -11,14 +11,28 @@
 
   &_search {
     background-image: url('../../../assets/images/icons/search.svg');
+
+    @media (max-width: $max-mobile-width) {
+      display: none;
+    }
   }
 
   &_heart {
     background-image: url('../../../assets/images/icons/heart.svg');
+
+    @media (max-width: $max-mobile-width) {
+      display: none;
+    }
   }
 
   &_cart {
     background-image: url('../../../assets/images/icons/cart.svg');
+
+    @media (max-width: $max-mobile-width) {
+      width: 44px;
+      height: 44px;
+      background-size: 46%;
+    }
   }
 
   &__count {
@@ -38,5 +52,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: $max-mobile-width) {
+      top: -1px;
+      right: -6px;
+    }
   }
 }
