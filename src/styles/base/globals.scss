@@ -17,6 +17,16 @@ h1 {
   font-weight: 700;
   font-size: 60px;
   line-height: 73px;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 h2 {
@@ -26,6 +36,16 @@ h2 {
   font-size: 40px;
   line-height: 49px;
   position: relative;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::before {
     position: absolute;
@@ -43,6 +63,11 @@ h3 {
   margin: 0;
   font-weight: 700;
   font-size: 20px;
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 h4 {
@@ -55,8 +80,21 @@ h4 {
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1248px;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (max-width: $max-tablet-width) {
+    max-width: $tablet-width;
+    padding-left: 16px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    max-width: $mobile-width;
+    min-width: $mobile-width;
+  }
 }
 
 a {

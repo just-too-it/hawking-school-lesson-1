@@ -2,11 +2,29 @@
   &__title {
     margin-bottom: 66px;
     margin-left: -2px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 34px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 28px;
+    }
   }
 
   &__text {
     margin-bottom: 52px;
     margin-left: 1px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 34px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__wrapper {
@@ -16,9 +34,32 @@
     background-repeat: no-repeat;
     text-align: center;
 
+    @media (max-width: $max-tablet-width) {
+      width: 737px;
+      background-image: none;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 287px;
+      background-image: none;
+    }
+
     & iframe {
+      width: 771px;
+      height: 438px;
       margin-top: 49px;
       margin-left: -20px;
+
+      @media (max-width: $max-tablet-width) {
+        width: 737px;
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+      @media (max-width: $max-mobile-width) {
+        width: 287px;
+        height: 163px;
+      }
     }
   }
 

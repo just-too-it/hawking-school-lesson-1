@@ -2,7 +2,7 @@ include ../../components/social/social
 include ./consultation.data.pug
 
 section.consultation
-    .consultation__title= consultation.title 
+    .consultation__title !{consultation.title} 
     .consultation__description= consultation.description  
     .consultation__social
         +social(false)

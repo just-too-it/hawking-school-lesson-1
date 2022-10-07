@@ -8,4 +8,5 @@ form.form(name='consultation')
         .form__content  
             +input({type:'text', placeholder: 'Ваше имя'})
             +input({type:'tel', placeholder: 'Ваш телефон'})
-            +button({type:'submit', text: 'отправить'})
+            +button({type:'submit', text: 'отправить', className: 'form__button_send'})
+            +button({type:'submit', text: 'оставить заявку', className: 'form__button_leave'})

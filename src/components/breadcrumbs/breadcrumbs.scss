@@ -5,11 +5,13 @@
   border-bottom: 1px solid $color-grey-ligth;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   &__link {
     position: relative;
     font-size: 12px;
     line-height: 15px;
+    font-weight: 400;
     color: $color-grey;
     margin-right: 20px;
     cursor: pointer;
@@ -32,6 +34,23 @@
       &::after {
         display: none;
       }
+    }
+  }
+
+  &_desktop {
+    padding-bottom: 6px;
+    @media (max-width: $max-mobile-width) {
+      display: none;
+    }
+  }
+
+  &_mobile {
+    display: none;
+
+    @media (max-width: $max-mobile-width) {
+      display: flex;
+      padding-top: 8px;
+      padding-bottom: 8px;
     }
   }
 }

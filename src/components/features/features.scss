@@ -1,11 +1,30 @@
 .features {
   &__title {
     margin-bottom: 50px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 37px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 26px;
+    }
   }
 
   &__text {
     margin-bottom: 51px;
     padding-left: 5px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 50px;
+      padding-left: 2px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      font-size: 14px;
+      line-height: 26px;
+      margin-bottom: 23px;
+    }
   }
 
   &__list {
@@ -15,24 +34,80 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 27px;
+
+    @media (max-width: $max-tablet-width) {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 24px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      grid-template-columns: 290px;
+      justify-content: center;
+      row-gap: 27px;
+    }
   }
 
   &__item {
     padding-left: 2px;
+
+    @media (max-width: $max-tablet-width) {
+      width: 355px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      width: 290px;
+      text-align: center;
+    }
+
+    &:nth-child(3) {
+      @media (max-width: $max-tablet-width) {
+        grid-column: 1 / 3;
+        width: 100%;
+      }
+
+      @media (max-width: $max-mobile-width) {
+        grid-column: 1 / 1;
+        width: 100%;
+        margin-top: 5px;
+      }
+    }
   }
 
   &__img {
     margin-bottom: 23px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: 19px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-bottom: 10px;
+    }
   }
 
   &__subtitle {
     margin-bottom: -7px;
+
+    @media (max-width: $max-tablet-width) {
+      margin-bottom: -15px;
+    }
   }
 
   &__sublist {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @media (max-width: $max-tablet-width) {
+      margin-left: -8px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      margin-left: -2px;
+    }
 
     & span {
       font-weight: 600;
@@ -42,5 +117,16 @@
 
   &__description {
     padding-top: 17px;
+
+    @media (max-width: $max-tablet-width) {
+      display: inline-block;
+      width: 355px;
+    }
+
+    @media (max-width: $max-mobile-width) {
+      display: inline-block;
+      width: 290px;
+      margin-left: -2px;
+    }
   }
 }
