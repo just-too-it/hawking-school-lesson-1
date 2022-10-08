@@ -10,7 +10,7 @@
   cursor: pointer;
 
   &_search {
-    background-image: url('../../../assets/images/icons/search.svg');
+    background-image: url('../images/icons/search.svg');
 
     @media (max-width: $max-mobile-width) {
       display: none;
@@ -18,7 +18,7 @@
   }
 
   &_heart {
-    background-image: url('../../../assets/images/icons/heart.svg');
+    background-image: url('../images/icons/heart.svg');
 
     @media (max-width: $max-mobile-width) {
       display: none;
@@ -26,7 +26,7 @@
   }
 
   &_cart {
-    background-image: url('../../../assets/images/icons/cart.svg');
+    background-image: url('../images/icons/cart.svg');
 
     @media (max-width: $max-mobile-width) {
       width: 44px;

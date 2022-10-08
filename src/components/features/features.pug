@@ -6,6 +6,6 @@ section.features
     ul.features__list    
       each item in features.items
         li.features__item 
-          img.features__img(src=(`../../assets/images/${item.imgName}.png`) alt=`${item.alt}`)
+          img.features__img(src=(`assets/images/${item.imgName}.png`) alt=`${item.alt}`)
           h3.features__subtitle #{item.subtitle}
           .features__description !{item.description}
