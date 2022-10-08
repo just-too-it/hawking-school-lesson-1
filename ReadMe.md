@@ -8,7 +8,6 @@
 * Pug
 * JavaScript
 * SCSS
-* CSS Modules
 * Gulp
 
 ## Установка и запуск  
